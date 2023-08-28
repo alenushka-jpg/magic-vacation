@@ -6,6 +6,18 @@ const commonTranslations = {
   contestDate: {
     en: `October 1st - 31st, 2023`,
     ru: `1 - 31.10 / 2023`
+  },
+  title: {
+    en: `Victory`,
+    ru: `Победа`
+  },
+  registr: {
+    en: `Register the result`,
+    ru: `Зарегистрируй результат`
+  },
+  btn: {
+    en: `Send`,
+    ru: `отправить`
   }
 };
 
@@ -225,5 +237,59 @@ const langRules = {
   }
 };
 
+const langGame = {
+  game: {
+    title: {
+      en: `Game`,
+      ru: `Игра`
+    },
+    field: {
+      en: `Question input field`,
+      ru: `Поле для ввода вопроса`
+    },
+    button: {
+      en: `Find out`,
+      ru: `Узнать`
+    }
+  }
+};
+
+
+const langResult1 = {
+  result1: {
+    title: commonTranslations.title,
+    text: {
+      en: `You're heading to the Arctic!`,
+      ru: `ты отправляешься в Арктику!`
+    },
+    registr: commonTranslations.registr,
+    btn: commonTranslations.btn
+  }
+};
+
+const langResult2 = {
+  resul2: {
+    title: commonTranslations.title,
+    text: {
+      en: `The Fjord Inc suitcase is yours!`,
+      ru: `Чемодан Fjord Inc твой`
+    },
+    registr: commonTranslations.registr,
+    btn: commonTranslations.btn
+  }
+};
+
+const langResult3 = {
+  resul3: {
+    title: {
+      en: `You missed!`,
+      ru: `Не угадал!`
+    },
+    button: {
+      en: `Don't give up!`,
+      ru: `Не сдавайся!`
+    }
+  }
+};
 // eslint-disable-next-line no-console
-console.log(langHeader, langPromo, langFooter, langSwiper, langPrizes, langRules);
+console.log(langHeader, langPromo, langFooter, langSwiper, langPrizes, langRules, langGame, langResult1, langResult2, langResult3);
