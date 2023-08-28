@@ -9,7 +9,7 @@ const commonTranslations = {
   }
 };
 
-const langPage = {
+const langHeader = {
   nav: {
     home: {
       en: `Home`,
@@ -95,7 +95,7 @@ const langSwiper = {
       ru: `История`
     }
   },
-  desc: {
+  item: {
     1: {
       en: `James Target was the founder of "Fjord Inc". Since 1965,
       "Fjord Inc" has been renowned for its reliable and convenient
@@ -186,5 +186,44 @@ const langPrizes = {
   }
 };
 
+const langRules = {
+  rules: {
+    h3: {
+      en: `Rules`,
+      ru: `Правила`
+    },
+    info: {
+      en: `To inherit James Target's estate,
+      you need to find out from "Sonya" where
+      you should go in case of victory`,
+      ru: `Для того чтобы получить наследство Джеймса Таргета,
+      тебе нужно выведать у «Сони», куда предстоит
+      отправиться тебе в случае победы`
+    },
+    ol: {
+      1: {
+        en: `You have 5 minutes`,
+        ru: `Тебе отводится 5 минут.`
+      },
+      2: {
+        en: `Ask any questions in the text field.`,
+        ru: `Задавай любые вопросы в текстовом поле.`
+      },
+      3: {
+        en: `Click the "Find out" button to get an answer.`,
+        ru: `Нажимай кнопку «Узнать», чтобы получить ответ.`
+      },
+      4: {
+        en: `"Sonya" can only answer Yes or No.`,
+        ru: `«Соня» может отвечать только Да или Нет.`
+      }
+    },
+    button: {
+      en: `Let's go!`,
+      ru: `Погнали`
+    }
+  }
+};
+
 // eslint-disable-next-line no-console
-console.log(langPage, langPromo, langFooter, langSwiper, langPrizes);
+console.log(langDeader, langPromo, langFooter, langSwiper, langPrizes, langRules);
