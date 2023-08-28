@@ -226,4 +226,4 @@ const langRules = {
 };
 
 // eslint-disable-next-line no-console
-console.log(langDeader, langPromo, langFooter, langSwiper, langPrizes, langRules);
+console.log(langHeader, langPromo, langFooter, langSwiper, langPrizes, langRules);
