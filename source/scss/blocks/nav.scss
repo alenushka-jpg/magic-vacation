@@ -29,7 +29,7 @@
   font-family: $font-alt;
   text-transform: uppercase;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $tablet) and (orientation: portrait) {
     flex-direction: column;
     align-items: flex-start;
     margin: auto 0;
@@ -37,7 +37,7 @@
     color: $c-dark;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile) and (orientation: landscape){
     margin: auto 0;
     font-size: 1.4rem;
     color: $c-dark;
@@ -46,6 +46,10 @@
 
 .nav__ul li {
   margin-left: 4rem;
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    margin: 0 0 2.5rem;
+  }
 
   @media (max-width: $tablet) {
     margin-left: 0;
@@ -91,11 +95,15 @@
 .nav__social-btn {
   margin-left: 4.8rem;
 
-  @media (max-width: $tablet) and (orientation: portrait) {
+  @media (max-width: $tablet) {
     margin-left: 1.8rem;
   }
 }
 
 .nav__change-lang {
   margin-left: 2.8rem;
+
+  @media (max-width: $tablet) {
+    margin-left: 1rem;
+  }
 }

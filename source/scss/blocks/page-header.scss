@@ -15,11 +15,77 @@
   }
 }
 
+.page-header--menu-opened {
+  @media (max-width: $tablet) and (orientation: portrait) {
+    .page-header__logo-link  {
+      position: relative;
+      padding: 0.5rem 0;
+      width: 6.8rem;
+      color: #5f458c;
+      z-index: 1;
+    }
+
+    .page-header__burger {
+      order: 1;
+
+      &::before,
+      &::after {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        width: 2.6rem;
+        height: 2px;
+        box-shadow: none;
+      }
+
+      &::after {
+        transform: translate(-50%) rotate(-45deg);
+      }
+    }
+  }
+}
+
 .page-header__top {
   @include container;
   @include flex;
 }
 
 .page-header__burger {
+  @include btn-reset;
+  position: relative;
   display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0;
+  background-color: $c-light;
+  border-radius: 50%;
+  z-index: 1;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0.8rem;
+    height: 1px;
+    background-color: $c-dark;
+  }
+
+  &::before {
+    top: 0.9rem;
+    width: 1rem;
+    box-shadow: 0 0.6rem 0 0 $c-dark;
+  }
+
+  &::after {
+    top: 1.2rem;
+    width: 0.7rem;
+  }
 }
