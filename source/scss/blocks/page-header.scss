@@ -1,0 +1,21 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2.7rem 0;
+  z-index: 10;
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    padding: 0.9rem 0;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    padding: 0.9rem 0;
+  }
+}
+
+.page-header__top {
+  @include container;
+  @include flex;
+}

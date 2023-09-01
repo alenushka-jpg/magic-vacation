@@ -1,0 +1,44 @@
+.social-media {
+  position: relative;
+}
+
+.social-media__ul {
+  @include list-reset;
+  position: absolute;
+  opacity: 0;
+}
+
+.social-media__toggler {
+  @include btn-reset;
+  position: relative;
+  display: block;
+  color: $c-dark;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  outline: none;
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    display: none;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    display: none;
+  }
+
+  &::before {
+    @include center;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $c-light;
+    border-radius: 50%;
+  }
+}
+
+.social-media__toggler svg {
+  @include center;
+  display: block;
+  width: 2.3rem;
+  height: 2.2rem;
+}

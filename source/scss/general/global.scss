@@ -65,6 +65,15 @@ img {
   vertical-align: top;
 }
 
+.logo {
+  color: $c-light;
+}
+
+.logo__svg {
+  width: 10rem;
+  height: 1.5rem;
+}
+
 .svg-wrapper {
   position: absolute;
   top: 0;
@@ -88,4 +97,8 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+main {
+  display: none;
 }

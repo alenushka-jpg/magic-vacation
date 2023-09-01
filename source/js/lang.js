@@ -47,6 +47,10 @@ const langHeader = {
       en: `EN`,
       ru: `RU`
     },
+    togg: {
+      en: `Manage the block with social buttons`,
+      ru: `Управлять блоком с социальными кнопками`
+    },
     inst: {
       en: `Link to the Instagram social network`,
       ru: `Ссылка на социальную сеть инстаграм`
