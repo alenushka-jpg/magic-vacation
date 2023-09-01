@@ -19,3 +19,7 @@
   @include container;
   @include flex;
 }
+
+.page-header__burger {
+  display: none;
+}
