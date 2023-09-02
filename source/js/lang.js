@@ -101,6 +101,14 @@ const langFooter = {
     },
     label: commonTranslations.contestDurationLabel,
     date: commonTranslations.contestDate,
+    note: {
+      en: `Winners can choose any 14 consecutive days within two years
+      from the end of the competition. Winners can use the voucher themselves
+      or gift it to another person.`,
+      ru: `Победители могут выбрать любые 14 дней подряд в течение двух лет
+      с даты окончания конкурса. Победители могут воспользоваться путевкой сами
+      или подарить другому лицу.`
+    }
   },
 };
 
