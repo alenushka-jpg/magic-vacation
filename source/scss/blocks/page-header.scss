@@ -111,9 +111,13 @@
   border-radius: 50%;
   z-index: 1;
 
-  // @media (max-width: $mobile) and (orientation: landscape) {
-  //   display: block;
-  // }
+  @media (max-width: $tablet) and (orientation: portrait) {
+    display: block;
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    display: block;
+  }
 
   &::before,
   &::after {

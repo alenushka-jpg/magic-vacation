@@ -1,0 +1,35 @@
+.screen {
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+  display: none;
+
+  &--promo {
+    display: flex;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+
+  @media (max-width: $tablet - 1) and (orientation: landscape) {
+    height: 100vh;
+  }
+}
+
+.screen__container {
+  @include container;
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.screen__footer {
+  display: none;
+}
