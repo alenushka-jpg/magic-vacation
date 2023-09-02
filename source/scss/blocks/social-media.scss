@@ -4,8 +4,46 @@
 
 .social-media__ul {
   @include list-reset;
-  position: absolute;
-  opacity: 0;
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    display: flex;
+  }
+}
+
+.social-media__li {
+  @media (max-width: $tablet) and (orientation: portrait) {
+    margin: 0 1.25rem;
+  }
+}
+
+.social-media__link {
+  &--inst svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &--fb svg {
+    width: 0.8rem;
+    height: 1.7rem;
+  }
+
+  &--vk svg {
+    width: 1.7rem;
+    height: 1rem;
+  }
+
+  @media (max-width: $tablet) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    color: $c-light;
+    background-color: $c-dark;
+    border: 2px solid transparent;
+    border-radius: 50%;
+  }
 }
 
 .social-media__toggler {
